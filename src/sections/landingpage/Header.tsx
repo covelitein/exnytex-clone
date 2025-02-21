@@ -64,7 +64,7 @@ export default function Header() {
         {/* links end */}
 
         {/* menu */}
-        <Button className="mf:hidden [&_svg]:size-24 flex items-center justify-center px-4 py-4">
+        <Button className="mf:hidden [&_svg]:size-9 bg-transparent flex items-center justify-center px-4 py-4">
           <Tally2 className="rotate-[90deg]" />
         </Button>
 

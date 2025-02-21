@@ -11,7 +11,7 @@ import { sliderData } from "@/constants";
 
 export default function Hero() {
   return (
-    <div className="pb-40 pt-5 max-sm:px-5">
+    <div className="pb-40 pt-5 max-sm:px-3">
       <Container>
         <Swiper
           effect={"fade"}

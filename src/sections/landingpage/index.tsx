@@ -10,6 +10,7 @@ import Partnerships from "./Partnerships";
 import TermsSection from "./TermsSection";
 import PrivacySections from "./PrivacySections";
 import AboutSection from "./AboutSection";
+import BuyCryptoList from "./BuyCryptoList";
 
 export {
   Header,
@@ -23,5 +24,6 @@ export {
   Partnerships,
   TermsSection,
   PrivacySections,
-  AboutSection
+  AboutSection,
+  BuyCryptoList
 };

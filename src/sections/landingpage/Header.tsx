@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 
 const navlinks: { href: string; label: string }[] = [
   { href: "/", label: "Trade" },
-  { href: "/", label: "Buy Crypto" },
+  { href: "/buy-crypto", label: "Buy Crypto" },
   { href: "/", label: "Markets" },
   { href: "/about", label: "About" },
   { href: "/terms", label: "Terms Of Use" },

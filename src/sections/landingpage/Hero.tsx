@@ -28,7 +28,7 @@ export default function Hero() {
           className="mySwiper"
         >
           {sliderData.map((slide) => (
-            <SwiperSlide key={slide.title} className="max-sbp:pt-10 pt-10 pb-20">
+            <SwiperSlide key={slide.title} className="max-sbp:pt-10 pt-10">
               <div className="grid sbp:grid-cols-2 md:grid-cols-3 gap-5 sbp:py-10 pt-32 pb-60 bg-[#0d1114] ">
                 <div className="flex items-center z-10 max-sbp:col-span-2">
                   <div className="">

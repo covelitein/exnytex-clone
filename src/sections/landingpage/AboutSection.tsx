@@ -7,7 +7,7 @@ export default function AboutSection() {
     <section className="py-20 max-sm:px-5">
       <Container className="sbp:max-w-4xl">
         <div className="">
-          <h2 className="text-4xl font-bold text-[#7fb210] text-center mb-6">
+          <h2 className="text-4xl font-bold text-[#7fb210] text-shadow-[#7fb210] text-center mb-6">
             About
           </h2>
           <div className="mb-16 text-center">

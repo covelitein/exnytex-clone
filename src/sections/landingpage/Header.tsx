@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Container } from "@/components/container";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const navlinks: { href: string; label: string }[] = [
   { href: "/", label: "Trade" },
@@ -15,6 +16,7 @@ const navlinks: { href: string; label: string }[] = [
 ];
 
 export default function Header() {
+  const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -24,6 +26,10 @@ export default function Header() {
       document.body.classList.remove("overflow-hidden");
     }
   }, [menuOpen]);
+
+  const gotoRegister = () => {
+    router.push("/register");
+  };
 
   return (
     <header className="max-sm:px-5">
@@ -48,7 +54,10 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
-          <Button className="font-bold bg-[#7fb210] -skew-x-6 lg:text-[1rem]">
+          <Button
+            onClick={gotoRegister}
+            className="font-bold bg-[#7fb210] -skew-x-6 lg:text-[1rem] hover:bg-[#444]"
+          >
             Sign UP / IN
           </Button>
         </ul>
@@ -86,7 +95,10 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
-            <Button className="font-bold bg-[#7fb210] -skew-x-6 lg:text-[1rem]">
+            <Button
+              onClick={gotoRegister}
+              className="font-bold bg-[#7fb210] -skew-x-6 lg:text-[1rem] hover:bg-[#444]"
+            >
               Sign UP / IN
             </Button>
           </ul>
